@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body onload="startGame()">
+        <div>
+            <button onmousedown="moveUp()" onmouseup="clearMove()" ontouchstart="moveUp()">UP</button><br><br>
+            <button onmousedown="moveLeft()" onmouseup="clearMove()" ontouchstart="moveLeft()">LEFT</button>
+            <button onmousedown="moveRight()" onmouseup="clearMove()" ontouchstart="moveRight()">RIGHT</button><br><br>
+            <button onmousedown="moveDown()" onmouseup="clearMove()" ontouchstart="moveDown()">DOWN</button><br><br>
+            <button onclick="restartGame()">RESTART</button>
+        </div>
+        <p>Use the buttons above to move the red square and avoid the green obstacles.</p>
+        </body>
+</html>
+
